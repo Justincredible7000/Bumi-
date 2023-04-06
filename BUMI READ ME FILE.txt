@@ -1,0 +1,54 @@
+#################################################################################################
+BUMI ARBITRAGE PROGRAM
+#################################################################################################
+
+DESCRIPTION
+This program is designed to perform arbitrage on various crypto exchanges comparing the prices between them based on a specific pair.
+The program then tells you if an arbitrage oppertunity is avalible for this particular pair and then gives you the chance to make a trade
+
+LIBRARIES
+This program makes use of the CCXT(CryptoCurrency eXchange Trading) library which is a library that allows access to vcarious Crypto exchanges as well as information about them relating to prices. It gets up to date prices on all the major exchanges while also allowing access to the exchanges API for trading. 
+
+INSTRUCTIONS
+The program is fairly simple to use and follows a series of prompts given to the use:
+1. IF appliacble the user must enter in the API keys of the exchanges they want to work with into the exchange variables to allow access to the exchanges they want to work with.
+2.Then you have to enter the two exchanges you want to test and currently those options are limited to what exchanges have variables(Kraken,Binance,Coinbase,Bitfinex,Gemini,Kucoin) and the exchanges must be entered as written there.
+3.User must enter a Cryptocurrency they want to test the arbitrage with the currency must be written in its pair code(ie BTC/USD) and only one pair may be used per attempt.
+4..The program will then use the compare price function to test the prices between the exchanges for that particular pair to see if arbitrage is avalibe and will tell the user if it is 
+5.The program then prompts the user if they want to try another pair where you can either put Y for yes or N for no
+6. Once you've finished going through all the pairs you want and selected N you are then shown the arbitrage with the highest ROI and can then choose whether or not to make a trade
+7. Then you choose whether the trade will be market or limit order
+8.Then you simply put in how much you want to buy on one exchange and then how much to sell on another exchange
+9. THe program will execute the trade
+
+EXCHANGES
+This program can support any exchanges covered by CCXT but currently it has variables for the following Crypto Exchanges:
+Kraken
+Coinbase
+Binance
+Bitfinex
+Gemini
+Kucoin
+To have trade functionality requires each exchange having a user account generating API Keys and puttting them in the exchange variable.
+
+BUMI CREDENTIALS
+Kraken:
+Username:Bumima
+Password:Yourock0005!
+API Public:9mXDUbOmTjleTWGY3SBDUvcRLeHUxyAO0fLD3JNGIN6+PWGVvwViZgc
+API Secret:DZVRwPEYJtVphOtNBa2RuH+GqRSdMypaEgVZ5X9vnZgWKS962pm/jS6RzSDiF87NrrQaAGXzMVh8DlpkvkRM1Q==
+Coinbase:
+Username:developer@bumima.com
+Password:Yourock05!
+Gemini:
+Username:developer@bumima.com
+Password:Yourock05!
+Kucoin:
+Username:developer@bumima.com
+Password:Yourock05!
+API public=6423ca1b6a3d73000123d14c
+API Secret:c930aec5-56e6-46ae-ab13-c461fe24c296
+
+
+KNOWN ISSUES
+The program in its current form doesn't put Trade orders through but that is due to me having issues with account creation on the various crypto exchanges but if someone had a fully functioning account and put in the proper API Keys and account passwords.
